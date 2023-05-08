@@ -1,0 +1,56 @@
+.page__footer {
+  padding: 1rem;
+  background-color: $color-externals;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 90vw;
+    @media all and (min-width: 500px) {
+      flex-direction: row;
+    }
+    &__nav--1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      background-color: $color-links;
+      color: white;
+      &__link {
+        color: white;
+        text-decoration: none;
+        padding: 0rem 3.4rem;
+        display: inline-block;
+        @media all and (min-width: 500px) {
+          padding: 0.5rem;
+        }
+      }
+    }
+    &__nav--2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      background-color: green;
+      color: white;
+
+      &__link {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
